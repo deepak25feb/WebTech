@@ -1,0 +1,132 @@
+.calculator-display{
+  display: flex;
+  justify-content: center;
+  
+}
+
+.calc{
+  background-color: rgb(199, 196, 196);
+  font-size: 32px;
+  font-weight: bolder;
+  border: 1px solid black;
+  margin: 0px;
+  text-align : center;
+}
+
+
+.click:hover{
+  background-color: blanchedalmond;
+}
+
+
+
+
+.click-opr:hover{
+  background-color: rgb(241, 194, 107);
+}
+
+.click:active,
+.click-opr:active{
+  background-color: red;
+}
+
+
+
+.calculator-layout{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  
+  grid-template-areas: 
+  "diplay_screen diplay_screen diplay_screen diplay_screen"
+  "clear clear backspace divide"
+  "num-7 num-8 num-9 mul"
+  "num-4 num-5 num-6 sub"
+  "num-1 num-2 num-3 add"
+  "num-0 num-0 num-0 equals"
+  ;
+}
+
+.calc-diplay{
+ grid-area: diplay_screen;
+ padding: 20px;
+ margin: 0px;
+ text-align: end;
+ color : white;
+ background-color: black;
+ height: 30px;
+ overflow-y: hidden;
+}
+.calc-clear{
+ grid-area: clear;
+ padding: 20px;
+}
+.calc-backspace{
+ grid-area: backspace;
+ padding: 20px;
+}
+.calc-opr-divide{
+ grid-area: divide;
+ background-color: orange;
+ padding: 20px;
+}
+.calc-opr-add{
+ grid-area: add;
+ background-color: orange;
+ padding: 20px;  
+
+}
+.calc-opr-sub{
+ grid-area: sub;
+background-color: orange;
+padding: 20px;
+}
+.calc-opr-mul{
+ grid-area: mul;
+ background-color: orange;
+ padding: 20px;
+}
+.calc-opr-equals{
+ grid-area: equals;
+ background-color: orange;
+ padding: 20px;
+}
+.calc-num-1{
+ grid-area: num-1;
+ padding: 20px;
+}
+.calc-num-2{
+ grid-area: num-2;
+ padding: 20px;
+}
+.calc-num-3{
+ grid-area: num-3;
+ padding: 20px;
+}
+.calc-num-4{
+ grid-area: num-4;
+ padding: 20px;
+}
+.calc-num-5{
+ grid-area: num-5;
+ padding: 20px;
+}
+.calc-num-6{
+ grid-area: num-6;
+ padding: 20px;
+}
+.calc-num-7{
+ grid-area: num-7;
+ padding: 20px;
+}
+.calc-num-8{
+ grid-area: num-8;
+ padding: 20px;
+}
+.calc-num-9{
+ grid-area: num-9;
+ padding: 20px;
+}
+.calc-num-0{
+ grid-area: num-0;
+ padding: 20px;
+}
